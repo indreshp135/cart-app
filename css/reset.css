@@ -105,3 +105,12 @@ tfoot tr:last-child td:last-child {
   justify-content: center;
   align-items: center;
 }
+
+
+#checkout-btn {
+  background-color: lightgreen;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
