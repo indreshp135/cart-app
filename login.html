@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/login.css" />
   </head>
   <body>
     <!-- cursor -->
@@ -53,28 +54,22 @@
                   class="shopping-cart-img"
                 />
               </a>
-              <a href="checkout.html" class="cart-link">
-                <img
-                  src="images/shopping-cart.png"
-                  alt="shopping cart"
-                  class="shopping-cart-img"
-                />
-                <span class="cart-count">3</span>
-              </a>
             </div>
           </div>
         </div>
       </nav>
       <!-- navbar section end -->
 
-      <!-- product section start-->
-      <section id="product-section">
-        <div class="filters"></div>
-        <div class="products">
-          <div class="product-list row"></div>
+      <div class="main-div">
+        <div id="login-div">
+          <h2>Log in</h2>
+          <form>
+            <input type="email" placeholder="email" id="login-email" />
+            <input type="password" placeholder="password" id="login-passwd" />
+          </form>
+          <button id="login-submit">Submit</button>
         </div>
-      </section>
-      <!-- product section end-->
+      </div>
     </div>
 
     <!-- footer section start -->
@@ -130,6 +125,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
     <!-- script js -->
-    <script src="js/app.js"></script>
+    <script src="js/login.js"></script>
   </body>
 </html>

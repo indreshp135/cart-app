@@ -57,55 +57,6 @@ p {
 }
 /* common end */
 
-/* loader start */
-#loadingDiv {
-  width: 100vw;
-  height: 100vh;
-  z-index: 100;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--bg-color);
-}
-
-.loader {
-  width: 9.5rem;
-  height: 9.5rem;
-  background: center / contain no-repeat url(../images/loader.gif);
-}
-/* loader end */
-
-/* cursor start */
-#cursor {
-  position: absolute;
-  border-radius: 50%;
-  width: 1rem;
-  height: 1rem;
-  z-index: 90;
-  transition: 0.1s ease-out;
-  background-color: var(--red-color);
-  pointer-events: none;
-  box-shadow: 0 0 0.2rem var(--pinterest-color);
-}
-/* cursor end */
-
-/* scrollbar start */
-::-webkit-scrollbar {
-  width: 1.5rem;
-}
-
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 0.5rem var(--grey-color);
-  border-radius: 1rem;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: var(--red-color);
-  border-radius: 1rem;
-}
-/* scrollbar end */
-
 /* navbar start */
 .navbar-right {
   display: flex;
@@ -129,6 +80,24 @@ h1 span,
 
 .shopping-cart-img {
   width: 4rem;
+}
+
+.cart-link {
+  position: relative;
+  display: inline-block;
+  padding-left: 2rem;
+}
+
+.cart-count {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 5px;
+  border-radius: 50%;
 }
 /* navbar end */
 
@@ -239,6 +208,7 @@ h1 span,
 }
 
 .btn-add-cart {
+  cursor: pointer;
   font-size: 1.6rem;
   color: var(--primary-color);
 }
